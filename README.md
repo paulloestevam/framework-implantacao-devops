@@ -6,6 +6,8 @@ No ano passado, tive o desafio de desenhar um plano de modernização para a ár
 
 Embora eu tenha seguido para novos desafios antes do término do projeto, acredito que o material desenvolvido possui um valor imenso, sendo agora disponibilizado como um open source framework para apoiar líderes técnicos, Agile Coaches e gestores que desejam iniciar essa jornada de melhoria contínua em seus próprios órgãos ou empresas.
 
+<img src="resources/image2.png" width="600" height="700" >
+
 ## 🎯 Objetivos do Framework
 
 *   **Modernização:** Migração de processos manuais para pipelines automatizados (CI/CD).
