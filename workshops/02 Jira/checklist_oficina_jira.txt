@@ -1,0 +1,133 @@
+Checklist de atividades
+
+	- Criar alguns itens no Product Backlog de vários tipos (histórias, tarefas, bugs e análises)
+	- Adicionar descrição na parte interna dos itens para fornecer mais detalhes
+	- Renomear itens para ter títulos melhores seguindo alguns padrões de histórias ágeis.
+	- Ordenar itens no Backlog
+	- Excluir itens desnecessários do Backlog
+	 
+	- Adicionar itens no Sprint Backlog
+	- Atribuir um Responsável para cada item da Sprint
+	- Iniciar a Sprint
+	- Mudar status dos itens para Em Andamento
+	- Adicionar comentários nos itens para descrever o trabalho realizado
+	- Finalizar um item concluído
+	- Finalizar a Sprint!
+
+
+Criar itens do tipo "História":
+	A Criar uma dialog para gravar livro
+	A Criar uma Tela que permita buscar um usuário
+	B Mudar a cor
+	B Renomear a palavra Sinopse para Descrição e Escritor para Autor
+	C Criar um mecanismo/funcionalidade para gera relatórios de empréstimos
+	C Criar um mecanismo/funcionalidade para resetar a senha do usuário
+	D Criar um Botão que permita editar um livro
+	D Criar um modal que exiba as informações detalhadas de um livro
+	E Criar uma Tela que permita cadastrar um novo gênero de livro
+	E Criar um mecanismo/funcionalidade para emprestar um livro a um usuário
+	F Na hora que o usuário fizer login, exiba um BOM DIA bem grande na tela, pra animar, e se puder bote um versículo em negrito com a fonte Algerian
+	F Criar uma Tela que permita cadastrar um novo usuário
+	G Criar uma Botão que permita excluir um livro
+	G Criar um mecanismo/funcionalidade para trazer a capa do livro direto do site da Amazon
+	H Mudar a cor do sistema
+	H Criar uma Tela que permita buscar um livro
+
+	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies
+	  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+	  Ut enim ad minim veniam
+	  Ullamco laboris nisi ut aliquip ex ea commodo consequat
+	  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+	  Qui officia deserunt mollit anim id est laborum 
+
+
+Criar itens do tipo "Tarefas":
+	A Aumentar o número maximo de conexões do Postgres
+	B Adicionar coluna "autor" na tabela livro no banco de dados
+	C Atualizar a versão do java
+	D Criar uma Maquina Virtual para testes do sistema
+	E Testar responsividade do sistema pelo celular
+	F Criar um mecanismo de logging para imprimir em um arquivo texto
+	G Refatorar queries para prevenir SQL Injection
+	H Criptografar a senha do banco de dados que está visível no arquivo application.properties
+	I Criar Manual do Sistema para os usuários
+	J Fazer backup do banco de dados
+	K Melhorar performance da query de geração de relatórios de empréstimos
+
+
+Criar itens do tipo "Bug":
+	A Livro - Quando clica em buscar livro com letra maiuscula o sistema trava
+	B Livro - Não está gravando o gênero corretamente
+	C Livro - Não está gravando quando digita título com mais de 50 caracteres
+	D Livro - Na tela Detalhes, nao esta trazendo a descrição do livro
+	E Usuário - Está permitindo cadastrar dois usuários com o mesmo email
+	F Usuário - O e-mail de resetar senha não está chegando depois das 19:00
+	G No navegador Edge o login não está funcionando
+
+
+Criar itens do tipo "Análises":
+	A Perguntar ao PO se há limites de livros que um usuário pode pegar emprestado
+	B Entender o mecanismo de multa
+	C Entender o mecanismo de devolução
+	D Biblioteca da Amazon para obter informações de livros
+	E Verificar se a biblioteca de geração de relatórios é compatível com Spring 3.3.1
+	F Migração para Docker Container
+	G Validar se será permitido acessar o sistema fora da rede da ALPB
+	
+	
+Adicionar descrição nos itens:
+	A Livro - Permitir cadastro
+		Criar uma tela para cadastrar um novo livro. Os campos obrigatórios são "Título, Autor, ISBN", os campos opcionais são "Ano, Editora, e número de páginas"
+	
+	B Mudar a cor da barra superior
+		Alterar a cor da topbar para a mesma cor que está atualmente da sidebar (azul claro). Utilizar mesmo código da cor.
+	
+	C Relatórios - Permitir gerar um Relatório de Empréstimos por data inicial/final
+		No menu Relatórios, criar um sub-menu que abre uma tela que permite ao usuário inserir as datas, e um botão para gerar Relatório em PDF. Colunas do relatório "Data, Livro, Usuário".
+	
+	D Livro - Permitir editar 
+		Criar uma tela para editar os campos de um livro.
+	
+	E Gênero - Permitir cadastrar um novo gênero de livro
+		Criar uma tela para cadastrar um novo gênero de livro. Campo obrigatório: Descrição.
+	
+	F Exibir "Bom dia" após o login
+		Ao efetuar o login, um popup deve aparecer com a mensagem de BomDia/BoaTarde/BoaNoite e um versículo aleatorio extraido do arquivo csv em anexo.
+	
+	G Livro - Permitir excluir
+		Permitir excluir (soft delete) um livro.   O mecanismo de recuperação do livro será implementador em uma outra história. 
+	
+	H Livro - Permitir buscar pelo título
+		Na tela principal de Livros, a que exibe todos os livros, criar um campo de busca pelo título.   Este campo deve ignorar espaços em brancos e permitir buscar livros por parte do nome (ilike).
+
+
+Renomear histórias:
+	A Livro - Permitir cadastro
+	A Usuário - Permitir buscar pelo cpf
+	B Mudar a cor da barra superior
+	B Livro - Renomear campos na tela de edição
+	C Relatórios - Permitir gerar um Relatório de Empréstimos por data inicial/final
+	C Usuário - Permitir ao usuário resetar sua senha
+	D Livro - Permitir editar 
+	D Livro - Tela que exibe as informações detalhadas do livro
+	E Gênero - Permitir cadastrar um novo gênero de livro
+	E Empréstimo - Permitir ao usuario realizar um empréstimo de um livro
+	F Exibir "Bom dia" após o login
+	F Usuário - Permitir cadastro
+	G Livro - Permitir excluir
+	G Livro - Integração com a Amazon para trazer a capa do livro
+	H Permitir que o usuário possa alterar a cor/tema do sistema
+	H Livro - Permitir buscar pelo título
+
+
+Excluir itens:
+	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies
+	  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+	  Ut enim ad minim veniam
+	  Ullamco laboris nisi ut aliquip ex ea commodo consequat
+	  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+	  Qui officia deserunt mollit anim id est laborum 
+
+https://www.atlassian.com/br/software/jira
+
+
